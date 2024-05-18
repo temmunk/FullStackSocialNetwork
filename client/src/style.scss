@@ -13,7 +13,7 @@ $themes:(
         logo:rgb(255, 255, 255),
         bgSoft: #555555,
         textColorsoft: #b4b4b4,
-        border: rgb(77, 77, 77),
+        border: rgb(88, 85, 85),
     ),
     
 );
@@ -52,4 +52,8 @@ $themes:(
     @media (max-width: 960px){
         @content;
     }
+}
+
+ body {
+    margin: 0px 0px 0px 0px;
 }
