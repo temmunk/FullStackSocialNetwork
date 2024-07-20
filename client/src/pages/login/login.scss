@@ -1,6 +1,7 @@
 .login{
 height: 100vh;
-background-color: aqua;
+background:url("https://images.unsplash.com/photo-1608501078713-8e445a709b39?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center  ; // fill the screen with the background image 
+background-size: cover;
 display:flex;
 align-items: center;
 justify-content: center;
@@ -14,22 +15,30 @@ justify-content: center;
         overflow: hidden;
         .left{
             flex:1;
-            background: url("https://images.pexels.com/photos/22924802/pexels-photo-22924802/free-photo-of-the-forest.jpeg")
-                center;
-            background-size: cover;
+            background-color: #3d2386;
+            // gradient background color
+            background: linear-gradient(90deg, rgba(61,35,134,1) 0%, rgba(61,35,134,1) 35%, rgba(0,212,255,1) 100%);
+            
             padding:50px;   
             display:flex;
             flex-direction: column;
             gap:30px;
-            color:white;
+            color:rgb(255, 255, 255);
 
             h1{
                 font-size: 70px;
+                
 
             }
-            p{}
+            p{
+                font-size: 20px;
+                // move the text up
+                margin-top: -20px;
+                
+            }
             span{
                 font-size:14px;
+                margin-left: 35%;
             }
             button{
                 width: 50%;
@@ -39,6 +48,9 @@ justify-content: center;
                 border: none;
                 font-weight: bold;
                 cursor:pointer;
+                // center the button
+                margin-left: 25%;
+                margin-top: 60px;
             }
 
         }
@@ -55,6 +67,9 @@ justify-content: center;
                 color:rgb(1, 1, 15);
                 flex-direction: column;
                 gap:20px;
+                justify-content: center;
+                // center the text
+                margin-left: 41%;
 
             }
             form{
@@ -63,17 +78,23 @@ justify-content: center;
                     border-bottom: 1px solid black;
                     padding: 10px;
                     margin-bottom: 20px;
+                    // separate the input fields
+                    margin-left: 30%;
+                    margin-top: 20px;
 
                 }
                 button{
                     width: 50%;
                     padding: 10px;
-                    background-color: rgb(14, 10, 219);
+                    background-color: rgb(76, 174, 199);
                     color: black;
                     border: none;
                     font-weight: bold;
-                    
+                    margin-left: 25%;
                     cursor:pointer;
+                    // move this bottom down a bit without affecting the other elements
+                    margin-top: 60px;
+                    
 
                 }
             }

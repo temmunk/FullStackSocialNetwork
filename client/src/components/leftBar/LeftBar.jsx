@@ -38,7 +38,7 @@ const LeftBar = () => {
                 </div>
                 
                 <hr/>
-                <div ckassName="menu">
+                <div className="menu">
                     <span>Shortcuts</span>
                 </div>
                 <div className="item">

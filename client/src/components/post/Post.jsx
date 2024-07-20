@@ -7,6 +7,7 @@ import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Comments from "../comments/Comments";
+import moment from 'moment';
 
 
 
@@ -36,7 +37,7 @@ const Post = ({post}) => {
         
             <div className="content">
                 <p>{post.desc}</p>
-                <img src={post.img} alt="" />
+                <img src={"./upload/"+ post.img} alt="" />
             </div>
             <div className="info">
                 <div className="item">
@@ -52,7 +53,7 @@ const Post = ({post}) => {
                     Share
                 </div>
             </div>
-            {commentOpen && <Comments />}
+            {commentOpen && <Comments postId={post.Id}/>}
         </div>
     </div>
   )

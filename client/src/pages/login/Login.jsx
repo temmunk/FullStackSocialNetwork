@@ -42,13 +42,13 @@ const Login = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Nullam eget felis id lacus ultricies rhoncus. 
                     Nullam nec purus euismod, ultricies metus in, 
-                    tempus ex. Donec nec justo eget metus tincidunt 
-                    ultrices. In hac habitasse platea dictumst.
+                    tempus ex.
                 </p>
-                <span> Don't have an account?</span>
+                
                 <Link to="/register">
                     <button>Register</button>
                 </Link>
+                <span> Don't have an account?</span>
             </div>
             <div className="right">
                 <h1>Login</h1>
@@ -56,7 +56,7 @@ const Login = () => {
                     <input type="text" placeholder="Username" name="username" onChange={handleChange}/>
                     <input type="password" placeholder="Password" name="password" onChange={handleChange} />
 
-                    {err && {err}}
+                    {err && err}
                     <button onClick={handleLogin}>Login</button>
                 </form>
                 
